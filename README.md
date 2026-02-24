@@ -29,7 +29,7 @@ const AddTeacher: React.FC = () => {
 If you want to show the information saved in the local storage, you ony need to call the `useAppSelector` hook in your component.
 
 ```typescript
-import { useAppSelector } from '../redux/reduxHooks';
+import { useAppSelector } from '../state/reduxHooks';
 
 const TeacherInfo: React.FC = () => {
   const teacher = useAppSelector((state) => state.user.teacher);
@@ -54,7 +54,7 @@ const TeacherInfo: React.FC = () => {
 You only import the **useAppSelector** from `/redux/reduxHooks.ts` directory
 
 ```typescript
-import { useAppSelector } from '../redux/reduxHooks';
+import { useAppSelector } from '../state/reduxHooks';
 ```
 
 #### Initialize AppSelector

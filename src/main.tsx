@@ -3,20 +3,20 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import '@/index.css'
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { routerMerger } from '@/lib/router-merger'
+import { routerMerger } from '@/infrastructure/utils/router-merger'
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
-import { store, persistor } from '@/redux/store.ts';
+import { store, persistor } from '@/infrastructure/state/store.ts';
 
-import { QuestionsGameRoutes } from '@/routes/question-routes.tsx';
-import { SentenceRoutes } from '@/routes/senteces-routes';
-import { IndexRoutes } from '@/routes/index-routes'
-import { DashboardFormRoutes } from '@/routes/dashboard-forms-routes'
-import { ConsoleRoutes } from './routes/console-routes';
-import { Toaster } from "@/components/ui/toaster"
-import { AuthRoutes } from './routes/auth-routes';
-import { WordleGameRoutes } from './routes/wordle-routes';
-import translationChallengeRoutes from "@/routes/translation-challenge-routes";
+import { QuestionsGameRoutes } from '@/presentation/routes/question-routes.tsx';
+import { SentenceRoutes } from '@/presentation/routes/senteces-routes';
+import { IndexRoutes } from '@/presentation/routes/index-routes'
+import { DashboardFormRoutes } from '@/presentation/routes/dashboard-forms-routes'
+import { ConsoleRoutes } from '@/presentation/routes/console-routes';
+import { Toaster } from "@/presentation/components/ui/toaster"
+import { AuthRoutes } from '@/presentation/routes/auth-routes';
+import { WordleGameRoutes } from '@/presentation/routes/wordle-routes';
+import translationChallengeRoutes from "@/presentation/routes/translation-challenge-routes";
 
 
 const routes = routerMerger(IndexRoutes,
