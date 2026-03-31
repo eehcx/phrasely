@@ -1,4 +1,4 @@
-import WordleGame  from "@/presentation/components/wordle/wordle-game.tsx"
+import WordleGame  from "@/presentation/pages/games/wordle/wordle-game.tsx"
 
 export const WordleGamePage = () => {
     const words = [

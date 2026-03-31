@@ -1,7 +1,7 @@
 import Background from "@/assets/room.jpg";
 import { FaStar } from "react-icons/fa6";
 import { IoOpenOutline, IoPeople } from "react-icons/io5";
-import { useAppSelector } from "@/infrastructure/state/reduxHooks.ts";
+import { useAppSelector } from "@/data/state/reduxHooks.ts";
 import { Link } from 'react-router-dom';
 
 const ConsoleHeader = () => {

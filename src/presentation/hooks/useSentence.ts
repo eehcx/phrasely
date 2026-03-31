@@ -1,5 +1,5 @@
-import { useAppDispatch } from '@/infrastructure/state/reduxHooks.ts';
-import { addSentence, addTopic, removeSentence, reset } from '@/infrastructure/state/slices/sentenceSlice.ts';
+import { useAppDispatch } from '@/data/state/reduxHooks.ts';
+import { addSentence, addTopic, removeSentence, reset } from '@/data/state/slices/sentenceSlice.ts';
 import { Sentence, SentenceState } from '@/core/types/sentenceType.ts';
 
 export const useSentence = () => {

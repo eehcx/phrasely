@@ -1,5 +1,5 @@
-import { useAppDispatch } from '@/infrastructure/state/reduxHooks.ts';
-import { addQuestion, removeQuestion, addTopic, reset } from '@/infrastructure/state/slices/questionSlice.ts';
+import { useAppDispatch } from '@/data/state/reduxHooks.ts';
+import { addQuestion, removeQuestion, addTopic, reset } from '@/data/state/slices/questionSlice.ts';
 import { Question, QuestionState } from '@/core/types/questionType.ts';
 
 export const useQuestion = () => {

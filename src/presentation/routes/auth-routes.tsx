@@ -1,5 +1,5 @@
 import { RouteObject } from "react-router-dom";
-import { SignupTeacher } from "@/presentation/pages/auth/register-teacher.tsx";
+import { SignupTeacher } from "@/presentation/pages/auth/sign-up/register-teacher";
 
 export const AuthRoutes: RouteObject[] = [
     {

@@ -1,7 +1,7 @@
-import { ExerciseLayout } from "@/presentation/components/quizz/exercise-layout.tsx"
+import { ExerciseLayout } from "@/presentation/components/common/quizz/exercise-layout.tsx"
 import Cube from "@/assets/cube.jpg"
-import { useAppDispatch, useAppSelector } from "@/infrastructure/state/reduxHooks.ts";
-import { next as sentenceNext, prev as sentencePrev } from "@/infrastructure/state/slices/sentenceSlice.ts";
+import { useAppDispatch, useAppSelector } from "@/data/state/reduxHooks.ts";
+import { next as sentenceNext, prev as sentencePrev } from "@/data/state/slices/sentenceSlice.ts";
 import { useSentence } from "@/presentation/hooks/useSentence.ts";
 import { useNavigate } from "react-router-dom";
 

@@ -1,4 +1,4 @@
-import { WordleFormProvider } from "@/presentation/components/wordle/wordle-form-provider.tsx"
+import { WordleFormProvider } from "@/presentation/pages/games/wordle/forms/wordle-form-provider.tsx"
 
 export const CreateWordleGame = () => {
     return (

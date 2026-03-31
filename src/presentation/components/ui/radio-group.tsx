@@ -1,6 +1,6 @@
 import * as React from "react"
 import * as RadioGroupPrimitive from "@radix-ui/react-radio-group"
-import { cn } from "@/infrastructure/utils/utils.ts"
+import { cn } from "@/shared/utils/utils.ts"
 import { DotFilledIcon } from "@radix-ui/react-icons"
 
 const RadioGroup = React.forwardRef<

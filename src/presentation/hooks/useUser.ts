@@ -1,5 +1,5 @@
-import { useAppDispatch } from '@/infrastructure/state/reduxHooks.ts';
-import { registerTeacher, registerGuest, removeGuest, resetUser } from '@/infrastructure/state/slices/userSlice.ts';
+import { useAppDispatch } from '@/data/state/reduxHooks.ts';
+import { registerTeacher, registerGuest, removeGuest, resetUser } from '@/data/state/slices/userSlice.ts';
 import { Teacher, Guest } from '@/core/types/userType.ts';
 
 export const useUser = () => {

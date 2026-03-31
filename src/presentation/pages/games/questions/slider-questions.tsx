@@ -1,7 +1,7 @@
-import { ExerciseLayout } from "@/presentation/components/quizz/exercise-layout.tsx"
+import { ExerciseLayout } from "@/presentation/components/common/quizz/exercise-layout.tsx"
 import Foodies from "@/assets/glass.png"
-import { useAppDispatch, useAppSelector } from "@/infrastructure/state/reduxHooks.ts";
-import { next as questionNext, prev as questionPrev } from "@/infrastructure/state/slices/questionSlice.ts";
+import { useAppDispatch, useAppSelector } from "@/data/state/reduxHooks.ts";
+import { next as questionNext, prev as questionPrev } from "@/data/state/slices/questionSlice.ts";
 import { useNavigate } from "react-router-dom";
 import { useQuestion } from "@/presentation/hooks/useQuestion.ts";
 

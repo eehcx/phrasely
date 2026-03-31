@@ -5,7 +5,7 @@ import Cube from "@/assets/cube.jpg"
 import Background from "@/assets/room.jpg";
 //import { Footer } from "@/components/home/footer"
 import { IoOpenOutline, IoExitOutline } from "react-icons/io5";
-import { useAppSelector } from "@/infrastructure/state/reduxHooks.ts";
+import { useAppSelector } from "@/data/state/reduxHooks.ts";
 import { Link, useNavigate } from 'react-router-dom';
 import { useUser } from '@/presentation/hooks/useUser.ts';
 
@@ -18,7 +18,7 @@ interface Game {
 }
 
 const games: Game[] =[
-    { title: 'Translation Challenge', tags: ['Funny', 'Translator'] , image: Glass, url: '/translation-challenge/play', type: 'translation-challenge' },
+    //{ title: 'Translation Challenge', tags: ['Funny', 'Translator'] , image: Glass, url: '/translation-challenge/play', type: 'translation-challenge' },
     { title: 'WordWise', tags: ['Practice', 'Knowledge'] , image: Foodies, url: '/question/play', type: 'question' },
     { title: 'Sece-Sentences', tags: ['Trivia', 'Skills', 'Fun'] , image: Cube, url: '/sentence/play',  type: 'sentence' },
     

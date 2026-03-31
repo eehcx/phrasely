@@ -1,7 +1,7 @@
 
-import { NavigationMenuHome } from "@/presentation/components/home/navbar.tsx";
+import { NavigationMenuHome } from "@/presentation/components/common/navbar";
 import Spline from '@splinetool/react-spline';
-import { Footer } from "@/presentation/components/home/footer.tsx";
+import { Footer } from "@/presentation/components/common/footer";
 
 const GridSection = () => {
     return (

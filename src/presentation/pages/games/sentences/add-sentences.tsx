@@ -1,4 +1,4 @@
-import { SentenceForm } from '@/presentation/components/sentences/sentence-form-provider.tsx'
+import { SentenceForm } from '@/presentation/pages/games/sentences/forms/sentence-form-provider.tsx'
 import { SentenceSelectionProvider } from '@/presentation/contexts/sentence-form-context.tsx'
 export const AddSentences = () => {
     return (

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { IoCloseSharp, IoArrowForwardOutline } from "react-icons/io5";
-import { useAppSelector } from "@/infrastructure/state/reduxHooks.ts";
+import { useAppSelector } from "@/data/state/reduxHooks.ts";
 import { useNavigate } from 'react-router-dom';
 import { TextInput } from "@/presentation/components/auth/text-input.tsx"
 import { useUser } from '@/presentation/hooks/useUser.ts';

@@ -3,10 +3,10 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import '@/index.css'
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { routerMerger } from '@/infrastructure/utils/router-merger'
+import { routerMerger } from '@/shared/utils/router-merger'
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
-import { store, persistor } from '@/infrastructure/state/store.ts';
+import { store, persistor } from '@/data/state/store.ts';
 
 import { QuestionsGameRoutes } from '@/presentation/routes/question-routes.tsx';
 import { SentenceRoutes } from '@/presentation/routes/senteces-routes';
@@ -16,13 +16,11 @@ import { ConsoleRoutes } from '@/presentation/routes/console-routes';
 import { Toaster } from "@/presentation/components/ui/toaster"
 import { AuthRoutes } from '@/presentation/routes/auth-routes';
 import { WordleGameRoutes } from '@/presentation/routes/wordle-routes';
-import translationChallengeRoutes from "@/presentation/routes/translation-challenge-routes";
 
 
 const routes = routerMerger(IndexRoutes,
   DashboardFormRoutes,
   SentenceRoutes,
-  translationChallengeRoutes,
   QuestionsGameRoutes,
   ConsoleRoutes,
   AuthRoutes,
