@@ -9,7 +9,7 @@ import { handleGrammarCommands } from "@/shared/utils/commands/handle-grammar-co
 export const WordleFormWordsFields = () => {
 
     const { control, register, setValue } = useFormContext<IWordleFormSchema>();
-    const { fields, append, prepend, remove, swap, move, insert } = useFieldArray({
+    const { fields, append, remove } = useFieldArray({
         control, // control props comes from useForm (optional: if you are using FormProvider)
         name: "words", // unique name for your Field Array
     });

@@ -1,5 +1,5 @@
 import { cn } from "@/shared/utils/utils.ts";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 interface Word {
     word: string;
@@ -13,7 +13,7 @@ interface WordleGameProps {
 const WordleGame: React.FC<WordleGameProps> = ({ words }) => {
 
 
-    const [currentWord, setCurrentWord] = useState<number>(0)
+    const [currentWord] = useState<number>(0)
 
 
 
@@ -29,7 +29,7 @@ const WordleGame: React.FC<WordleGameProps> = ({ words }) => {
                 {
                     Array.from({
                         length: words.at(currentWord)?.word.length ?? 0
-                    }).map(_ => words.at(currentWord)?.word.split("").map((letra, index) => (
+                    }).map(_ => words.at(currentWord)?.word.split("").map((_, index) => (
                         <span className="p-5 border-orange-900 w-14 h-14 bg-card rounded shadow" key={index}></span>
                     )))
 

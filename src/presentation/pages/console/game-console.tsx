@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Glass from "@/assets/happy_people.png"
 import Foodies from "@/assets/foodies.jpg"
 import Cube from "@/assets/cube.jpg"
 import Background from "@/assets/room.jpg";

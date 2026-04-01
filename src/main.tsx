@@ -16,6 +16,7 @@ import { ConsoleRoutes } from '@/presentation/routes/console-routes';
 import { Toaster } from "@/presentation/components/ui/toaster"
 import { AuthRoutes } from '@/presentation/routes/auth-routes';
 import { WordleGameRoutes } from '@/presentation/routes/wordle-routes';
+import { NotFound } from '@/presentation/pages/not-found';
 
 
 const routes = routerMerger(IndexRoutes,
@@ -24,7 +25,8 @@ const routes = routerMerger(IndexRoutes,
   QuestionsGameRoutes,
   ConsoleRoutes,
   AuthRoutes,
-  WordleGameRoutes)
+  WordleGameRoutes,
+  [{ path: "*", element: <NotFound /> }])
 
 const router = createBrowserRouter(routes)
 
